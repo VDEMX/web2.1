@@ -988,7 +988,6 @@ input[type="checkbox"] {
 			text-shadow:0 0 3px @blanco;
 		}
 		h2 {
-    		font-weight: inherit;
     		margin: 0 0 0.2em 1em;
 			.Ubuntu-font;
 			.sombreado(1px, 1px, 2px, @negro);
@@ -1004,10 +1003,12 @@ input[type="checkbox"] {
 			line-height:1.4em;
     		float: left;
     		margin: 0 2em;
+    		.font-size(11);
+    		strong{.font-size(11);}
 		}
 		#foot {
 			bottom: 0.5em;
-    		.font-size(9);
+    		.font-size(10);
     		position: absolute;
     		width: 100%;
 			#redes{
@@ -1022,10 +1023,11 @@ input[type="checkbox"] {
    					width: 35px;
 				}
 				.RSS {
-    				background: url("../images/sprites.png") repeat-x scroll -299px -113px transparent;
     				.right;
     				height: 35px;
     				width: 35px;
+    				.font-size(30);
+    				.sombreado(2px, 2px, 3px, @negro);
 				}
 				.tweet {
     				background: url("../images/sprites.png") repeat-x scroll -300px -73px transparent;
@@ -1204,12 +1206,12 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 	min-height: 110px;
 	
 		h2 {
-    		.font-size(15);
+    		.font-size(17);
     		font-weight: inherit;
     		margin: 0.5em;
 		}
 		span{
-    		.font-size(12);
+    		.font-size(13.4);
     		font-weight: lighter;
     		margin: 0.5em;
     		text-align: justify;

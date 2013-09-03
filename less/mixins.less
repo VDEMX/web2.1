@@ -187,7 +187,7 @@
 }
 
 .parrafo (@margen: @em01 + 0.2, @medida: @em01, @entrelineado: @em01 + 0.2){ margin:@margen;font-size:@medida;line-height:@entrelineado;}
-.encabezado (@margen: @em01 - 0.4 @zero, @medida: @em01 + 0.8, @entrelineado: @em01, @weight:lighter ) { margin:@margen; font-size:@medida; line-height:@entrelineado; font-weight:@weight;}
+.encabezado (@margen: (@em01 - 0.4) @zero, @medida: (@em01 + 1), @entrelineado: @em01, @weight:lighter ) { margin:@margen; font-size:@medida; line-height:@entrelineado; font-weight:@weight;}
 .sombreado(@equix:@px01, @ye:@px01, @blur:@px01 + 1, @color:@blanco,){text-shadow:@equix @ye @blur @color;}
 
 .Ubuntu-font(){font-family: 'Ubuntu', sans-serif;}

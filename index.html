@@ -37,38 +37,37 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    
+    <!-- Estilos generales -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- 1140px Grid -->
 	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen">
 	<!-- layout -->
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
-	<!-- Estilos generales -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	
-	<!-- slideshow -->
-        <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
-		<![endif]-->
-	  
-	
-	<!-- Tipografía e imagenes -->
-	<link rel="stylesheet" href="css/typeimg.css" type="text/css" media="screen">
-	<!-- Ubuntu Tipografía -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
-    
-	<!-- Estilos para pantallas de 1024 -->
+	<!-- Estilos para pantallas de menores a 1024 -->
 	<link rel="stylesheet" href="css/smallerscreen.css" media="only screen and (max-width: 1023px)">
 	<!-- grid para celulares -->
 	<link rel="stylesheet" href="css/mobile.css" media="handheld, only screen and (max-width: 767px)">
     <!-- grid para iPhone -->
     <link rel="stylesheet" href="css/iphone.css" media="screen and (min-device-width : 320px) and (max-device-width : 767px)">
+    <!-- Tipografía e imagenes -->
+	<link rel="stylesheet" href="css/typeimg.css" type="text/css" media="screen">
+	<!-- Ubuntu Tipografía -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
     
+	
+	<!-- slideshow -->
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
+	<![endif]-->
+    
+    <!-- Enlaces canónicos -->
     <!-- http://t.co/y1jPVnT -->
 	<link rel="canonical" href="/">
 	
 	<!-- Todos los JavaScript en la parte inferior, a excepción de Modernizr, Modernizr permite elementos de HTML5 en navegadores obsoletos -->
-    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+ 	<script src="http://modernizr.com/downloads/modernizr.js"></script>
 
 </head>
 
@@ -496,7 +495,7 @@ if (Modernizr.borderradius){
 		<footer id="footer" role="contentinfo">
         <!-- You're free to remove the credit link to Jayj.dk in the footer, but please, please leave it there :) -->
         <div class="row">
-        	<div class="mt20 mb20 ml20 left t11 p90 lh170">
+        	<div class="mt20 mb20 ml20 left t12 p90 lh170">
             	<a href="#">Inicio</a> | <a href="#">nosotros</a> | <a href="#">productos</a> | <a href="#">soporte</a> | <a href="#">Tienda en línea</a> | <a href="#">Contacto</a> 
             </div>
             <div class="fourcol">
@@ -522,7 +521,7 @@ Si tienes una duda, comentario o sugerencia, por favor da click en la liga de ar
         <div id="foot">
         	<div class="sevencol ml30 mt10 last">®2012 VDE todos los derechos reservados | <a href="#">Términos de uso y privacidad</a></div>
             <div id="redes">
-                <div class="RSS"></div>
+                <div class="icon RSS" data-icon="A"></div>
                 <div class="youtube"></div>
                 <div class="tweet"></div>
                 <div class="face"></div>
