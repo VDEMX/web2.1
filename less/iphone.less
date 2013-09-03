@@ -1,0 +1,160 @@
+//variables
+@import "variab";
+
+//Mixins
+@import "mixins";
+
+.step {
+	 p {
+    	font-size:0.89em;
+		width:150px;
+	 }
+	 img {
+    	position: absolute;
+    	top: -10px;
+	}
+}
+.jms-content {
+	position:relative;
+	.margin(0, 0, 0, 10px);
+	width:230px;
+	padding:8px;
+}
+a.jms-link {
+    font-size:0.8em;
+    padding: 2px 5px;
+	.absoluta (106px,160px);
+}
+#menu-mostrar {width:percentage(@uno);}
+#acceder input {.porcentaje(92%);}
+.home #slider {height: 205px;}
+#header {background-position: 0 -33px;.porcentaje(94%);}
+.login {
+	background-position: 0 -16px !important;
+	background-size:auto;
+}
+#acceder input {.porcentaje(82%);}
+
+#formulario-RP input[type="number"] {
+	.boxShadow-inset(2px, 2px, 6px, @gris-claro, 0, 0, 0, @gris-medio);
+	.porcentaje(98%);
+	&:focus {background-color: (@blanco - 10);}
+	&:required:invalid {.boxShadow-inset(2px, 2px, 6px, @gris-claro, 0, 0, 4px, @rojo);}
+	&:required:valid {.boxShadow-inset(2px, 2px, 6px, @gris-claro, 0, 0, 4px, @azul-obscuro);}
+}
+
+/* !iPhone  - (landscape) */
+@media only screen 
+and (min-device-width : @mini-breakpoint) 
+and (orientation:landscape),
+only screen and (max-device-width : @phone-breakpoint)  
+and (orientation:landscape){
+/* Styles */
+.jms-content {width:410px;}
+.step p {width: 250px;}
+#header {.porcentaje(96%);}
+.login {background-position: 0 -36px !important;}
+/* Terminan los estilos */
+}
+
+/* !iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+body {
+    background: url("../images/bkgx2.jpg") repeat-x scroll center top transparent;
+	background-size:250% auto;
+}
+#header {
+    background: url("../images/bkg-headerx2.png") repeat-x scroll 0 -20px transparent;
+	background-size:25% auto;
+	h1 {
+	background: url("../images/spritesx2.png") no-repeat scroll -235px -24px transparent;
+	background-size:300%;
+}
+}
+#menu #productos-SP span, .graphite .dd-menu li a .dd-icon  {
+    background: url("../images/arrow_black_rightX2.png") no-repeat scroll 0 center transparent;
+    background-size:100% auto;
+}
+#buscador {
+    max-width: 255px;
+	background-size:130% auto;
+	input {padding: 0.3em 0;}
+}
+.productos,.productos-nuevos, .soporte, .tienda, .medio, .mapa, .masvendidos{
+    background-image: url("../images/spritesx2.png")!important;
+    background-size:400% auto;
+}
+.productos{background-position: -159px -90px!important;}
+.productos-nuevos{background-position: -142px 1px!important;}
+.masvendidos {background-position:1px -150px!important;}
+.soporte{
+    background-position: -94px -97px!important;
+    background-size:490% auto;
+    width: 77px!important;
+}
+.medio{
+    background-position: 700px 0!important;
+    background-size: 650% auto;
+}
+.tienda {
+    background-position:2px -80px!important;
+	height:65px!important;	
+	width: 80px!important;		
+}
+.mapa {
+    background-position: -55px 0!important;
+    background-size: 400% auto;
+    height: 88px!important;
+    width: 88px!important;
+}
+#redes {
+	.face, .RSS, .tweet, .youtube {background-image: url("../images/spritesx2.png") !important;background-size: 1000% auto !important;}
+	.face {background-position: -255px -70px !important;}
+	.RSS {background-position: -642px -110px !important;}
+	.tweet {background-position: -295px -70px !important;}
+	.youtube {background-position: -253px -110px !important;}
+}
+.login {
+	background-position: 0 0 !important;
+	background-size:cover auto!important;
+}
+/* Terminan los estilos */
+}
+
+/* !iPhone 4 - (landscape) ---------- */
+@media only screen 
+and (-webkit-min-device-pixel-ratio : 1.5) 
+and (orientation:landscape),
+only screen and (min-device-pixel-ratio : 1.5)  
+and (orientation:landscape){
+/* Styles */
+#header {
+	background-size:15% auto;
+	width: 99%;
+	padding: 0 1%;
+	h2 {
+    margin: 15px 10px 0;
+}
+}
+#container {max-width:unit(1136, px);}
+#buscador {
+    max-width:unit(395, px);
+	padding: 0 20px 0 29px;
+	background: url("../images/spritesx2.png") repeat scroll 0 52px @blanco;
+}
+.login {background-position: 0 -23px!important;}
+}
+
+
+/* !iPhone 4 - (portrait) ---------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 1.5)  and (orientation:portrait){
+/* Styles */
+#container {max-width:unit(640, px);}
+#buscador {background: url("../images/spritesx2.png") repeat scroll 5px 40px @blanco!important;}
+#header {.porcentaje(94%);}
+}
