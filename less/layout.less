@@ -609,6 +609,7 @@ input[type="checkbox"] {
 			.sombreado(1px, 1px, 2px, @negro);
 			border: none;
 			line-height: 1.1em;
+			.transition(all, .5s, ease);
 			&:focus, &:active{ background: rgba(255, 255, 255, 0.2);}
 			&:hover{.sombreado(0, 0, 2px, @blanco);}
 		}
@@ -982,6 +983,7 @@ input[type="checkbox"] {
 		a:link, a:visited {
     		border-bottom: 1px solid @blanco;
 	 		color:@blanco-azulado;
+	 		.transition(all, .5s, ease);
 		}
 		a:hover{
     		border-bottom:0 solid @blanco;
@@ -1015,34 +1017,18 @@ input[type="checkbox"] {
     				.right;
 					margin-right: 30px;
 					width:34%;
+					a:link, a:visited{border: 0;}
 				}
-				.face {
-    				.font-size(30);
+				.face, .RSS, .tweet, .youtube{
+					.transition(all, .5s, ease);
+					.font-size(30);
     				.sombreado(2px, 2px, 3px, @negro);
     				.right;
     				height: 35px;
    					width: 35px;
-				}
-				.RSS {
-    				.right;
-    				height: 35px;
-    				width: 35px;
-    				.font-size(30);
-    				.sombreado(2px, 2px, 3px, @negro);
-				}
-				.tweet {
-    				.font-size(30);
-    				.sombreado(2px, 2px, 3px, @negro);
-    				.right;
-    				height: 35px;
-    				width: 35px;
-				}
-				.youtube {
-    				.font-size(30);
-    				.sombreado(2px, 2px, 3px, @negro);
-    				.right;
-    				height: 35px;
-    				width: 35px;
+   					&:hover{
+	   					.sombreado(0, 0, 5px, rgba(255,255,255,0.7));
+   					}
 				}			
 		}
 }
@@ -1177,8 +1163,8 @@ input[type="checkbox"] {
 /* slider –––––––––––––––––––––––––––––––––––––––––*/	
 #slider {
 	width:100%;
-	max-width: 2000px;
-	min-width:770px;
+	max-width:@big-breakpoint;
+	min-width:@medium-breakpoint;
 	margin: 0 auto;
 	.logo {
 	    left: 10px;
@@ -1195,14 +1181,32 @@ input[type="checkbox"] {
 a:link , a:visited {.mod-home span{font-weight:100;}}
 a:hover .mod-home {box-shadow: 0 0 5px @azul-obscuro;}
 a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
+
+#modulos{
+	width:percentage(@uno);
+	max-width:@big-breakpoint;
+	.margin(0, auto,0, auto);
+	padding-bottom: 15px;
+	article{
+		.margin(1em, 1%, 1em, 1%);
+		width: 31.13%;
+		display: inline-block;
+		vertical-align: top;
+		a:link, a:visited {
+			border-bottom:0;
+			display: block;
+		}
+	}
+}
+
 .mod-home {
 	.boxShadow (0, 0, 5px,@negro);
 	.redondear(5px);
 	.gradient(@blanco, @gris-palido);
 	.border(1px,solid,@blanco);
-	.left;
-	.margin(1em, 2.7%, 1em, 0.5em);
-	.porcentaje(30.3%);
+	float: none;
+	display: inline-block;
+	vertical-align: top;
 	color:@gris-azulado;
 	.Ubuntu-font;
 	position: relative;
