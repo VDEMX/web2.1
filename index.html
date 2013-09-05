@@ -5,7 +5,7 @@
 <!-- ES IMPRESCIDIBLE QUE LA ETIQUETA X-UA-COMPATIBLE SEA LA PRIMERA QUE APAREZCA EN EL HEADER -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta charset="utf-8">
-	<title>VDE | título modificado</title>
+	<title>VDE | Ingeniería que fluye</title>
 	
 	<!-- !Favicons -->
     <!-- para iPhone 4 en adelante -->
@@ -37,9 +37,16 @@
     <!--iOS safari app -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+	
     
     <!-- !Estilos generales -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<!-- slideshow -->
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
+	<![endif]-->
 	<!-- 1140px Grid -->
 	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen">
 	<!-- layout -->
@@ -55,13 +62,6 @@
 	<link rel="stylesheet" href="css/typeimg.css" type="text/css" media="screen">
 	<!-- Ubuntu Tipografía -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
-    
-	
-	<!-- slideshow -->
-    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
-	<![endif]-->
     
     <!-- Enlaces canónicos -->
     <!-- http://t.co/y1jPVnT -->
@@ -262,21 +262,22 @@ if (Modernizr.borderradius){
 	            </div>
             	<a href="index.html"><h1>VDE</h1></a>
             	<h2>Aliados para su progreso</h2>
+            	<!-- Menú para desktops -->
+	            <nav id="menu" role="navigation">
+					<ul>
+						<li id="inicio"><a href="#">Inicio</a></li>
+	                    <li id="nosotros"><a href="#">Nosotros</a></li>
+	                    <li id="productos"><a href="#">Productos</a></li>
+	                    <li id="soporte"><a href="#">Soporte</a></li>
+	                    <li id="tienda"><a href="#">Tienda en línea</a></li>
+	                    <li id="contacto"><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
         	</hgroup>
         	
             <!-- !#menu -->
-            <!-- Menú para desktops -->
-            <a href="#" id="trigger" class="icon icon-menu">Menu</a>
-            <nav id="menu" role="navigation">
-				<ul>
-					<li id="inicio"><a href="#">Inicio</a></li>
-                    <li id="nosotros"><a href="#">Nosotros</a></li>
-                    <li id="productos"><a href="#">Productos</a></li>
-                    <li id="soporte"><a href="#">Soporte</a></li>
-                    <li id="tienda"><a href="#">Tienda en línea</a></li>
-                    <li id="contacto"><a href="#">Contacto</a></li>
-				</ul>
-			</nav>
+            <a href="#" id="trigger"><span class="icon icon-menu"></span>Menu</a>
+            
 			
 			<!-- !#productos -->
 			<nav id="menu-productos" role="navigation">

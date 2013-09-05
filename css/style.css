@@ -25,6 +25,13 @@ los estilos han sido generados con un preprocesador llamado LESS los archivos es
 	9- Footer 
 	10- Extras
 */
+.inline-block {
+  vertical-align: top;
+  display: inline-block;
+}
+.hide {
+  display: none;
+}
 /* =0 Reset
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 html,

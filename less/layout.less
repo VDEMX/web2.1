@@ -462,7 +462,7 @@ input[type="checkbox"] {
 }
 
 .select {
-  display: inline-block;
+  .inline-block;
   position: relative;
   overflow: hidden;
   height: 28px;
@@ -565,14 +565,20 @@ input[type="checkbox"] {
 	padding:@zero @px10;
 	min-height:70px;
 	background:url(../images/bkg-header.png) repeat-x scroll 0 -40px;
-		hgroup{height: 60px;}
+		hgroup{
+			height: 60px;
+			a{
+				border: 0;
+				.inline-block;
+			}
+		}
 	h1 {
     	background: url("../images/sprites.png") no-repeat scroll -230px -20px transparent;
     	height:40px;
-    	margin:2px 0 4px;
+    	margin:0 0 4px;
     	text-indent: -9000%;
     	width:120px;
-		.left;
+		.inline-block;
 	}
 	h2 {
     	display: none;
@@ -585,20 +591,12 @@ input[type="checkbox"] {
 
 
 #menu {
-   	left: 150px;
-    position: absolute;
-    top: 10px;
+   	.inline-block;
 	ul{
     	height: 46px;
-    	margin-top:4px;
     	width: 560px;
-		position:relative;
 		}
 		li {.left;}
-		#soporte {}
-		#productos{
-			
-			}
 		a 	{
 			color:@blanco;
 			display: block;
@@ -863,7 +861,7 @@ input[type="checkbox"] {
 	font-variant: normal;
 	text-transform: none !important;
 	speak: none;
-	display: inline-block;
+	.inline-block;
 	text-decoration: none;
 	width: 1em;
 	line-height: 1em;
@@ -910,7 +908,12 @@ input[type="checkbox"] {
 	.font-size(10.5);
 	line-height: 1.1em;
 	height: 1.3em;
-	a{color:@blanco;border-bottom: 1px solid @blanco; cursor:pointer; font-weight:normal; &:hover{color:@blanco;border-bottom: 0 solid @blanco;}}
+	a{
+		color:@blanco;
+		border-bottom: 1px solid @blanco!important; 
+		cursor:pointer; 
+		font-weight:normal; 
+		&:hover{color:@blanco;border-bottom: 0 solid @blanco;}}
 }
 
 #buscador {
@@ -1173,10 +1176,7 @@ input[type="checkbox"] {
 	    width: 150px;
 	    z-index: 30;
 	}
-	#slides{
-		width:100%;
-		height:460px;
-		}
+	#slides{width:100%;}
 }
 a:link , a:visited {.mod-home span{font-weight:100;}}
 a:hover .mod-home {box-shadow: 0 0 5px @azul-obscuro;}
@@ -1189,9 +1189,8 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 	padding-bottom: 15px;
 	article{
 		.margin(1em, 1%, 1em, 1%);
-		width: 31.13%;
-		display: inline-block;
-		vertical-align: top;
+		width: 31.06%;
+		.inline-block;
 		a:link, a:visited {
 			border-bottom:0;
 			display: block;
@@ -1205,7 +1204,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 	.gradient(@blanco, @gris-palido);
 	.border(1px,solid,@blanco);
 	float: none;
-	display: inline-block;
+	.inline-block;
 	vertical-align: top;
 	color:@gris-azulado;
 	.Ubuntu-font;
@@ -1384,7 +1383,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
     .cerrar {
     	background:@azul-marino;
     	border: 0 none;
-    	display: inline-block;
+    	.inline-block;
     	padding: 5px 0;
     	position: inherit;
     	text-align: center;
@@ -1921,7 +1920,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
     	border:1px solid @azul-claro;
     	padding: 5px;
     	font-weight: normal;
-    	display: inline-block;
+    	.inline-block;
     	margin: 0 0 5px;
     	&:hover{border:1px solid @aqua;}
     	}
@@ -1932,7 +1931,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 
 
 /*----------------- Detalle ---------------*/
-.inline-block {display: inline-block;}
+.inline-block {.inline-block;}
 
 #col-esp {
     float: left;
@@ -2029,7 +2028,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
     min-height: 200px;
     width: 27%;
     .mt10 {
-    	display: inline-block;
+    	.inline-block;
     	margin-top: 10px !important;
     	.font-size(12);
     	line-height: 1.3em;
@@ -2064,11 +2063,11 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 				#curva{
 					margin: 0 1em;
 					vertical-align: top;
-					display: inline-block;
+					.inline-block;
 				}
 			}
 			.codigos{
-				display: inline-block;
+				.inline-block;
 				margin: 0 1em;
 				vertical-align: top;
 				width: 30%;
@@ -2128,7 +2127,7 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 .accordion {
 	margin: 2em 0;
 	.accesorio {
-		display: inline-block; 
+		.inline-block; 
 		width: 100%; 
 		height: 64px; 
 		margin: 1em auto 0;
@@ -2548,7 +2547,7 @@ select {padding: 3px 0;}
 
 .nav li {
   position: relative;
-  display: inline-block;
+  .inline-block;
   margin-right: -4px; /* See: http://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
 }
 
@@ -2756,7 +2755,7 @@ select {padding: 3px 0;}
     width: 80%;
 }
 div.ui-slider-horizontal {
-    display: inline-block;
+    .inline-block;
     height: 15px;
     margin: 0 2% 0 20px;
     overflow: visible;
@@ -3029,7 +3028,7 @@ a.ui-slider-handle-horizontal {
 		    margin:0 0 0 2em;
 		}
 		.info {
-			display: inline-block;
+			.inline-block;
 		    float: none;
 		    max-width: 1280px;
 		    width: 96%;
@@ -3050,7 +3049,7 @@ a.ui-slider-handle-horizontal {
 	background: @blanco;
 	.redondear();
 	.boxShadow (0, 0, 7px, @gris-obscuro);
-	display: inline-block;
+	.inline-block;
 	height: auto;
 	max-height: 505px;
     margin:1em auto 3.5em;
@@ -3076,7 +3075,7 @@ a.ui-slider-handle-horizontal {
 		.gradient (@gris-claro, @blanco);
 		
 		#coverflow {
-			display: inline-block;
+			.inline-block;
 			height: 600px;
 			width: 2600px;
 			padding: 42px;
@@ -3267,7 +3266,7 @@ a.ui-slider-handle-horizontal {
 	}
 	label{
 	    color: #606060;
-	    display: inline-block;
+	    .inline-block;
 	    .font-size(12);
 	    line-height: 1em;
 	    margin: 10px 0 5px;
@@ -3307,7 +3306,7 @@ a.ui-slider-handle-horizontal {
 		    	border:1px solid @azul-claro;
 		    	padding: 5px;
 		    	font-weight: normal;
-		    	display: inline-block;
+		    	.inline-block;
 		    	margin: 0 0 5px;
 		    	&:hover{border:1px solid @aqua;}
 		    	}
@@ -3912,7 +3911,7 @@ a.ui-slider-handle-horizontal {
 		    margin-left: 1.2em;
 		}
 		.accesorio {
-		    display: inline-block;
+		    .inline-block;
 		    height: 64px;
 		    margin: 1em auto 0;
 		    padding: 0;
@@ -4431,7 +4430,7 @@ textarea {
 		section{
 			background: @blanco;
 			.boxShadow (2px, 2px,4px, @gris-medio);
-		    display: inline-block;
+		    .inline-block;
 		    padding: 1em;
 		    width: 100%;
 		    h2{
@@ -4452,7 +4451,7 @@ textarea {
 			    	border: 3px solid (@gris + 50);
 			    }
 			    h3{
-				    display: inline-block;
+				    .inline-block;
 				    margin-top: 0.5em;
 			    }
 			    p{
@@ -4596,7 +4595,7 @@ textarea {
 			width: 75%;
 			.font-size(14);
 			margin: 0.9em 0 0 0;
-			display: inline-block;
+			.inline-block;
 		}
 		input[type="email"], input[type="url"]{
 			width: 25%;

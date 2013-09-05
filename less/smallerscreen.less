@@ -15,25 +15,28 @@ body {font-size:
 	max-width:@px100 * 7.68;
 }
 
-#header {background-position: 0 -34px;}
+#header {
+	background-position: 0 -34px;
+	h1{
+		margin: 6px 0 4px;
+	}
+}
 
 #right-header {
-    float:left;
+    .inline-block;
     width:100%;
     position: relative;
+    margin: 1em 0;
 }
 #buscador {
     float:none;
-    margin:5px auto 1em;
+    margin:5px auto .5em;
     input, input:focus {width: 485px;}
 }
 #slider {
     min-width: 725px;
 	#shadow #left, #shadow #right {
     	width:50%;
-	}
-	#slides {
-    	height: 400px;
 	}
 }
 #content {
@@ -52,15 +55,14 @@ body {font-size:
 		}
 }
 .jms-wrapper {
-    height: 380px;
+    height: 350px;
 }
 #menu {
-    top: 19px;
     ul { 
     	width: 595px;
-    	margin-top: 2px;
+    	margin-top: 7px;
     }
-    a {padding: 20px 0.7em 9px;}
+    a {padding: 15px .7em 16px;}
 }
 .st-content {
 	font-size: 0.8em;
@@ -563,16 +565,9 @@ body {
 
 #menu {
 	a {background: none repeat scroll 0 0 transparent;}
-	#productos a {display: none;}
-	#soporte {
-		margin-left:0;
-		a {margin-left: 105px;}
-	}
 }
 
 #buscador {
-    background: url("../images/spritesx2.png") no-repeat scroll 2px -299px @blanco;
-	background-size:80% auto;
 	padding-left: 23px;
 }
 
@@ -604,13 +599,7 @@ body {
     width: 88px!important;
 }
 		
-#redes {
-		.face, .RSS, .tweet, .youtube {background-image: url("../images/spritesx2.png") !important;background-size: 1000% auto !important;}
-		.face {background-position: -257px -70px !important;}
-		.RSS {background-position: -645px -110px !important;}
-		.tweet {background-position: -295px -70px !important;}
-		.youtube {background-position: -256px -110px !important;}			
-}
+
 
 #formulario-RP  {
 	input[type="number"]{

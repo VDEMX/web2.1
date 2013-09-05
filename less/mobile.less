@@ -25,7 +25,30 @@ body {
 	line-height:@px10 * 2.4;
 }
 
+#trigger {
+	display: inline-block;
+	color: @blanco;
+	border: 0;
+	margin: .8em 0;
+	padding: 5px .5em;
+	.BlueGloss;
+	.redondear(15px);
+	.boxShadow (3px, 2px, 3px, @gris);
+	.font-size(16);
+	&:active, &:focus{
+	    .BlueGloss2;
+	}
+	&:hover{
+		color: @blanco;
+	}
+	.icon-menu{
+		margin-right: .3em;
+		.font-size(17);
+	}
+}
+
 #menu {
+	.hide;
     width:100%;
 	margin-top: 0;
 	left: 0;
@@ -100,43 +123,48 @@ body {
 
 #right-header {
 	right: 0;
-	top:20px!important;
-	width:100%;
+	top:0!important;
+	width: auto;
+	margin: 3px 0;
+	float: right;
 }
 	
 
-#login {font-size: 0.6em;line-height: 18px;}
+#login {
+	.font-size(11);
+	line-height: 1.4em;
+}
 
 #header {
-	width: 94%;
 	min-height: 75px;
-	 h1 {margin: 5px 0 0;}
+	 h1 {margin: 6px 0 0;}
 	 h2 {
     	color: @blanco;
-    	display: block!important;
-    	float: left;
+    	.inline-block;
     	left: 0;
     	margin: 20px 0 10px 5px;
     	position: relative;
     	text-indent: 0;
     	text-shadow: 0 0 2px @blanco;
     	top: 0;
-		font-size:1.32em;
+		.font-size(15);
 		}
 		hgroup{height: 70px;}
 }
 
 #buscador {
-    background: url("../images/sprites.png") no-repeat scroll 4px -248px @blanco;
     height:33px;
     margin-top:10px;
 	max-width:235px;
-	input, input:focus {
-		width: 98%;
+	input{
+		width:60px;
 		height: 33px;
 		padding: 0;
 		margin: 0;
 		text-indent: 0;
+		&:focus{
+			width:180px;
+		}
 	}
 }
 
@@ -169,8 +197,7 @@ body {
 		}
 }
 #content {
-    padding:1em;
-    width:90%;
+    padding:0 .3em;
 }
 
 
@@ -1422,9 +1449,8 @@ and (min-width : @mini-breakpoint-h) {
 /* Estilos */
 #container {max-width:@normal-breakpoint;min-width:@mini-breakpoint;}
 #header {
-    width: 98%;
     min-height: 75px;
-    h2 {font-size:1.32em;}
+    h2 {.font-size(18);}
 }
 .demo-container {width:400px!important;}
 #menu-smartphones {max-width:400px!important;}
@@ -1566,7 +1592,7 @@ and (min-width : @mini-breakpoint-h) {
 @media only screen
 and (max-width : @mini-breakpoint) {
 /* Estilos */
-#header h2 {font-size:0.86em;}
+
 #buscador {max-width: 240px;}
 #footer #foot #redes {
     margin: 30px 0 0 30px;
