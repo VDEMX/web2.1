@@ -596,14 +596,79 @@ Si tienes una duda, comentario o sugerencia, por favor da click en la liga de ar
 		<!-- !jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
         
-        <!-- Año -->
         <script>
-	    var ano = (new Date).getFullYear();
-		
-		$(document).ready(function() {
-		  $("#fecha").text( ano );
-		});
-    </script>
+        	//variables
+        	var ano = (new Date).getFullYear();
+        	
+        	// cuando se cargue el documento iniciar a correr los scripts
+	        $(document).on("ready", inicio);
+	        //funciones de la pantalla de inicio
+			function inicio () 
+			{
+				//fecha
+				$("#fecha").text( ano );
+				
+				// scroll body to 0px on click
+		        $('#top').click(function top() {
+		            $('body,html').animate({
+		                scrollTop: 0
+		            }, 800);
+		            return false;
+		        });
+		        
+		        //Slideshow
+		        $(function() {
+				
+				var jmpressOpts	= {
+					animation		: { transitionDuration : '0.8s' }
+				};
+				
+					$( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
+						autoplay	: true,
+						bgColorSpeed: '0.8s',
+						arrows		: true
+					}));
+				
+				});
+		        
+		        //productos
+		        $(".productos").click(function show_hide_menu(){
+			        $("#produc-list").toggle(500);
+			    });
+			    
+			    //Menú móvil
+			    new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+	    	type : 'cover'
+	    } );
+	    
+	     if ($.browser.webkit) return false;
+  target = $('input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="search"]');
+
+  target.each( function(i, el) {
+  el = $(el);
+  var ph = el.attr('placeholder');
+  if (!ph) return true;
+
+  el.addClass('placeholder');
+  el.attr('value', ph);
+
+  el.focus( function(e) {
+  if( el.val()==ph ) {
+   el.removeClass('placeholder');
+   el.attr('value', '');
+   }
+  });
+
+  el.blur( function(e) {
+  if( $.trim(el.val())=='' ) {
+   el.addClass('placeholder');
+   el.attr('value', ph);
+   }
+  });
+ });
+		        
+			}
+        </script>
         
 		<!-- Slideshow -->
 		<script type="text/javascript" src="js/jmpress.min.js"></script>
@@ -623,50 +688,18 @@ Si tienes una duda, comentario o sugerencia, por favor da click en la liga de ar
 				opacity: 1;
 				margin-top: 40px;
 			}
+			/* acordión productos */
+			.st-accordion ul li{height:auto;}
+			.st-accordion ul li > a span{visibility:hidden;}
 			</style>
 		</noscript>
-		<script type="text/javascript">
-			$(function() {
-				
-				var jmpressOpts	= {
-					animation		: { transitionDuration : '0.8s' }
-				};
-				
-				$( '#jms-slideshow' ).jmslideshow( $.extend( true, { jmpressOpts : jmpressOpts }, {
-					autoplay	: true,
-					bgColorSpeed: '0.8s',
-					arrows		: true
-				}));
-				
-			});
-		</script>
 
-    <!-- JavaScript del menu de productos -->
-    
-	<script>
-		$(".productos").click(function show_hide_menu(){
-	    	$("#produc-list").toggle(500);
-	    });
-	</script>
 	<!-- Menú móvil -->
     <script src="js/classie.js"></script>
 	<script src="js/mlpushmenu.js"></script>
-	<script>
-	    new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
-	    	type : 'cover'
-	    } );
-	</script>
-
-    <!--acordión productos-->
-	<noscript>
-			<style>
-				.st-accordion ul li{height:auto;}
-				.st-accordion ul li > a span{visibility:hidden;}
-			</style>
-	</noscript>
 		
 
-<!-- Ocultar la barra de dirreciones en iOS-->  
+<!-- Scripts para iOS-->  
 <script type="text/javascript">
     // cuando esté listo...
 window.addEventListener("load",function() {
@@ -700,10 +733,6 @@ if(("standalone" in window.navigator) && window.navigator.standalone){
 	
 	},false);
 }
-</script>
-
-<!--bloquear el zoom en iOS-->
-<script>
 // iOS corrección de errores de escala
 MBP.scaleFix();
 
@@ -711,39 +740,6 @@ MBP.scaleFix();
 yepnope({
 	test : Modernizr.mq('(only all)'),
 	nope : ['js/respond.min.js']
-});
-</script>
-
-
-<!-- JavaScript para el input de la busqueda -->
-<script>
-$(document).ready(function() {
-
- if ($.browser.webkit) return false;
-  target = $('input[type="text"], input[type="email"], input[type="tel"], textarea, input[type="search"]');
-
-  target.each( function(i, el) {
-  el = $(el);
-  var ph = el.attr('placeholder');
-  if (!ph) return true;
-
-  el.addClass('placeholder');
-  el.attr('value', ph);
-
-  el.focus( function(e) {
-  if( el.val()==ph ) {
-   el.removeClass('placeholder');
-   el.attr('value', '');
-   }
-  });
-
-  el.blur( function(e) {
-  if( $.trim(el.val())=='' ) {
-   el.addClass('placeholder');
-   el.attr('value', ph);
-   }
-  });
- });
 });
 </script>
         	
