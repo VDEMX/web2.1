@@ -25,6 +25,14 @@ body {
 	line-height:@px10 * 2.4;
 }
 
+#modulos article {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 1em;
+	margin-left: 0;
+	width: 100%;
+}
+
 #trigger {
 	display: inline-block;
 	color: @blanco;
@@ -170,11 +178,12 @@ body {
 
 .mod-home {
 	float: none;
-    margin: 1em auto;
-    padding: 0 20px;
-    width: 82%;
-		span {font-size: 1em;}
+    margin:auto;
+    padding:2%;
+    width:100%;
+		span {.font-size(16);}
 }
+
 .last, div.last {
     margin-right: auto;
 }
@@ -182,7 +191,7 @@ body {
     position: relative;
 	height: auto;
 		span {
-    		font-size: 0.9em;
+    		.font-size(16);
     		margin: 0 0 2em;
 		}
 		h2 {margin: 0 0 0.2em;}
@@ -642,7 +651,6 @@ body {
 
 #sectores, #hogar, #industria, #comercio, #agricultura {
 	#slider {
-    	#slides {height: 320px;}
     	#tS2.jThumbnailScroller .jTscroller .bloque {
 		    .titulo {
 		    	font-size: 1.1em;
@@ -1014,10 +1022,9 @@ body {
     width: 85%;
 }
 .home {
-	margin-top: 1em;
+	margin-top: .5em;
 	#slider {
-		height: 235px;
-		margin-top: 1em;
+		margin: 0 0 1em;
 	}
 }
 
@@ -1519,13 +1526,10 @@ and (min-width : @mini-breakpoint-h) {
 #slider {
     min-width: 298px;
     #slides {
-    	height: 220px;
     	.jms-slideshow {
-    		height: 230px;
     		.jms-wrapper {
 	    		height: 210px;
 	    		min-width: 295px;
-	    		.jms-dots {bottom: -35px;}
 	    	}
     	}
     }
@@ -1621,24 +1625,22 @@ and (max-width : @mini-breakpoint) {
 /* Slider */
 #slider {
     min-width: 290px;
-    height: 375px;
-	#slides {height: 188px;}
 }
 
-.jms-slideshow {height: 225px;}
+
 .jms-wrapper {
 	min-width:290px;
 	height:168px;
 }
-.jms-dots {bottom: -5px;}
+.jms-dots {bottom: -40px;}
 a.jms-link {
     font-size: 30px;
     margin-top: 20px;
     padding: 20px;
 }
-.color-1,.color-2,.color-3,.color-4,.color-5 {background-size:125% auto;}
+.color-1,.color-2,.color-3,.color-4,.color-5 {background-size:135% auto;}
 .step p {
-    font-size:2em;
+    .font-size(30);
     width:380px;
 }
 #comparativa select {width: 125%;}
