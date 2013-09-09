@@ -194,21 +194,17 @@ a.jms-link{
 		/* Not supported style */
 		&.not-supported {
 	    .color-1;
-	    &:after {
-		    content:'La funcionalidad de reproducción de diapositivas no es compatible con su dispositivo.';
-		    padding:0 0 30px 0;
-		    text-align:center;
-		}
 	    .step {
 	        display:none;
 	        position:relative;
 	        .opacity (1);
 	        margin:20px auto;
 	       h3{.font-size(18);}
+	       p{.font-size(14);}
 	        &:not(.active) {
 		        a.jms-link {
 		            .opacity (1);
-		            margin-top:40px;
+		            .font-size(12);
 		        }
 		    }
 		    &:first-of-type {display:block;}

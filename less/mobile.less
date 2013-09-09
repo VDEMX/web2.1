@@ -26,9 +26,10 @@ body {
 }
 
 .container {
-	position: inherit;
-	overflow:inherit;
 	height: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: inherit;
 }
 
 #modulos article {
@@ -1448,11 +1449,6 @@ and (max-device-width : @small-breakpoint) {
 	}
 }
 
-a.jms-link {
-    font-size: 0.7em;
-    margin-top: 20px!important;
-    padding: 3px 15px;
-}
 /* terminan los estilos */
 }
 
@@ -1639,11 +1635,7 @@ and (max-width : @mini-breakpoint) {
 	height:168px;
 }
 .jms-dots {bottom: -40px;}
-a.jms-link {
-    font-size: 30px;
-    margin-top: 20px;
-    padding: 20px;
-}
+
 .color-1,.color-2,.color-3,.color-4,.color-5 {background-size:135% auto;}
 .step p {
     .font-size(30);
