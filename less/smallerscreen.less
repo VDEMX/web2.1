@@ -21,6 +21,8 @@ body {font-size:
 	hgroup {height: 67px;}
 }
 
+#menu {margin:7px 1em 0;}
+
 #right-header {
     .inline-block;
     width:100%;
@@ -56,13 +58,7 @@ body {font-size:
 .jms-wrapper {
     height: 350px;
 }
-#menu {
-    ul { 
-    	width: 595px;
-    	margin-top: 7px;
-    }
-    a {padding: 15px .7em 16px;}
-}
+
 .st-content {
 	font-size: 0.8em;
 	min-height: 514px;
@@ -550,55 +546,44 @@ body {
 	background: url("../images/spritesx2.png") no-repeat scroll -235px -24px transparent;
 	background-size:300%;
 }
-.st-content {
-	ul h2 {
-		background-image: url("../images/icons-productsX2.png");
-		background-size:11% auto;
-	}
-	.cerrar {
-	    background-image: url("../images/arrow_upX2.png");
-	    background-size:2% auto;
-    }
-}
 }
 
-#menu {
-	a {background: none repeat scroll 0 0 transparent;}
-}
+
+
 
 #buscador {
 	padding-left: 23px;
 }
 
-.productos,.productos-nuevos, .soporte, .tienda, .medio, .mapa, .masvendidos {
-    background-image: url("../images/spritesx2.png")!important;
-    background-size:400% auto;
+.mod-home{
+	.productos,.productos-nuevos, .soporte, .tienda, .medio, .mapa, .masvendidos {
+	    background-image: url("../images/spritesx2.png")!important;
+	    background-size:400% auto;
+	}
+	.productos{background-position: -156px -88px!important;}
+	.productos-nuevos{background-position: -140px 1px!important;}
+	.masvendidos {background-position: 340px -150px!important;}
+	.soporte{
+	    background-position: -92px -95px!important;
+	    background-size:479% auto;
+	    width: 78px!important;
+	}
+	.medio{
+	    background-position:702px 0!important;
+	    background-size: 650% auto;
+	}
+	.tienda {
+	    background-position:2px -80px!important;
+	    height: 72px!important;	
+	    width: 82px!important;		
+	}
+	.mapa {
+	    background-position: -55px 0!important;
+	    background-size: 400% auto;
+	    height: 88px!important;
+	    width: 88px!important;
+	}
 }
-.productos{background-position: -161px -90px!important;}
-.productos-nuevos{background-position: -142px 1px!important;}
-.masvendidos {background-position: 340px -150px!important;}
-.soporte{
-    background-position: -94px -97px!important;
-    background-size:490% auto;
-    width: 77px!important;
-}
-.medio{
-    background-position:702px 0!important;
-    background-size: 650% auto;
-}
-.tienda {
-    background-position:2px -80px!important;
-    height: 72px!important;	
-    width: 82px!important;		
-}
-.mapa {
-    background-position: -55px 0!important;
-    background-size: 400% auto;
-    height: 88px!important;
-    width: 88px!important;
-}
-		
-
 
 #formulario-RP  {
 	input[type="number"]{
@@ -618,16 +603,21 @@ and (max-device-width : @normal-breakpoint)
 and (orientation : landscape) {
 /* Styles */
 /* terminan los estilos */
+	
 }
 
-/* !iPads (portrait) */
+/* !iPads 3 (portrait) */
 @media only screen
 and (min-device-width : @medium-breakpoint)
 and (max-device-width : @normal-breakpoint)
 and (orientation : portrait) {
 /* Styles */
 #container {max-width:@px100 * 7.68;}
-#header {background-position: 0 -22px !important;}
+#header {
+	background-position: 0 -22px !important;
+	h1{margin:0.6em 0 4px;}
+}
+
 #col-esp #foto .lb-overlay .grafica {
 	width: 93%!important;
 	img {max-width: 700px;}

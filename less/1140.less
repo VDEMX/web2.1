@@ -41,14 +41,6 @@ body {
 	margin: 0 auto;
 	min-height: 510px!important;
 	.lh09 {font-size: 1.4em;}
-	ul h2 {
-		background-image: url("../images/icons-productsX2.png")!important;
-		background-size:8.3% auto;
-	}
-	.cerrar {
-    	background-image: url("../images/arrow_upX2.png")!important;
-    	background-size:1.2% auto;
-    }
 }
 
 #header {
@@ -58,7 +50,6 @@ body {
 	h1 {
 		background: url("../images/spritesx2.png") no-repeat scroll -235px -24px transparent !important;
 		background-size: 300% auto;
-		height:45px!important;
 	}
 	#buscador {
 		padding-left: 23px;
@@ -66,38 +57,41 @@ body {
 	#produc-desck {top: -55px;}
 }
 
-#buscador {
-	margin-top:20px!important;
+#menu {margin:-3px 1em 0;}
+
+#buscador {margin-top:20px!important;}
+
+.mod-home {
+	.productos,.productos-nuevos, .soporte, .tienda, .medio, .mapa, .masvendidos{
+	    background-image: url("../images/spritesx2.png")!important;
+	    background-size:400% auto;
+	}
+	.productos{
+	    background-position: -156px -88px!important;
+	}
+	.soporte{
+	    background-position: -92px -95px!important;
+	    background-size:479% auto;
+	    width: 78px!important;
+	}
+	.medio{
+	    background-position:702px 0!important;
+	    background-size: 650% auto;
+	}
+	.tienda {
+	    background-position:2px -80px!important;
+		height: 72px!important;	
+		width: 82px!important;		
+	}
+	.mapa {
+	    background-position: -55px 0!important;
+	    background-size: 400% auto;
+	    height: 88px!important;
+	    width: 88px!important;
+	}
+	.productos-nuevos{background-position: -140px 1px!important;}
 }
-.productos,.productos-nuevos, .soporte, .tienda, .medio, .mapa, .masvendidos{
-    background-image: url("../images/spritesx2.png")!important;
-    background-size:400% auto;
-}
-.productos{
-    background-position: -161px -90px!important;
-    height: 82px;
-}
-.soporte{
-    background-position: -94px -97px!important;
-    background-size:490% auto;
-    width: 77px!important;
-}
-.medio{
-    background-position:702px 0!important;
-    background-size: 650% auto;
-}
-.tienda {
-    background-position:2px -80px!important;
-	height: 72px!important;	
-	width: 82px!important;		
-}
-.mapa {
-    background-position: -55px 0!important;
-    background-size: 400% auto;
-    height: 88px!important;
-    width: 88px!important;
-}
-.productos-nuevos{background-position: -142px 1px!important;}
+
 #login {margin-bottom:5px;}
 .masvendidos {background-position: 340px -150px!important;}
 #formulario-RP input[type="number"] {
