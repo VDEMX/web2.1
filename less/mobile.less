@@ -1434,9 +1434,6 @@ and (max-device-width : @small-breakpoint) {
 .jms-wrapper.not-supported .step {
     margin: 10px auto;
 }
-.jms-content {
-    width:250px;
-}
 .step  {
 	height: 208px;
 	width:100%;
@@ -1461,24 +1458,17 @@ and (min-width : @mini-breakpoint-h) {
     min-height: 75px;
     h2 {.font-size(18);}
 }
+
 .demo-container {width:400px!important;}
 #menu-smartphones {max-width:400px!important;}
 .graphite .dd-menu li.dd-parent a.dd-parent-a, .graphite .dd-menu a { width: 86%!important;}
-#content {width: 93%;}
 
 #footer #foot #redes {
     width: 75%;
 }
 /* Slider */
-.jms-content {
-    margin: 0 0 0 50px;
-    padding: 10px;
-    width:400px;
-}
 
-.step p {
-    width:380px;
-}
+
 #comparativa #productos .comp-pro h3 {right: -50px;}
 #comparativa #productos div:first-child {width: 17%;}
 #comparativa .comp-pro .btn-remover img {left: 15%;}
@@ -1532,6 +1522,18 @@ and (min-width : @mini-breakpoint-h) {
     		.jms-wrapper {
 	    		height: 210px;
 	    		min-width: 295px;
+	    		&.not-supported {
+				    .step {
+				        &:not(.active) {
+					        a.jms-link {
+					            position:relative;
+								top:0;
+								right:0;
+								margin-top: 1em;
+					        }
+					    }
+				    }
+				}
 	    	}
     	}
     }
