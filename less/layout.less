@@ -594,7 +594,6 @@ input[type="checkbox"] {
    	.inline-block;
 	ul{
     	height: 46px;
-    	width: 560px;
 		}
 		li {.inline-block;}
 		a 	{
@@ -1348,21 +1347,21 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
     margin: 2px auto 0;
     .boxShadow (0, 0, 10px, @negro);
     height: auto;
-    min-height: 520px;
     .font-size(9.2);
-    max-width: 1980px;
+    max-width:@big-breakpoint;
     display: block;
     .lh09 {.font-size(13.5);}
     .cerrar {
     	background:@azul-marino;
     	border: 0 none;
-    	.inline-block;
     	padding: 5px 0;
     	position: inherit;
     	text-align: center;
     	width: 100%;
-    	.font-size(14);
     	color: @blanco;
+    	margin-top: 1em;
+    	.font-size(14);
+    	.inline-block;
     }
     ul{
     transition: none;
