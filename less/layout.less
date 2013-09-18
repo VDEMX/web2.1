@@ -2456,23 +2456,21 @@ x:-o-prefocus, .lb-overlay img {
     	color:@gris-medio - 6;
     	strong {color:@gris-medio -33;}
     	.destacado{font-weight: bold;}
-    	
     	.row-shadow {background: none repeat scroll 0 0 @blanco;}
     	td {
     		border: 1px solid @gris-medio + 13;
     		font-weight: normal;
     		padding: 4px 0;
     		text-align: center;
-    		}
-    .header-table {
+    	}
+    	.header-table {
 	    	padding: 3px;
 	    	font-weight: bold;
 	    	text-align: center;
 	    	.gradient (@blanco,@gris-palido - 20);
 	    	vertical-align: middle;
-	    	
-	    	}
-    	}
+	    }
+    }
     #productos{
     	padding: 0 2.5%;
     	div:first-child{border: 0;min-height: 220px;}
@@ -2488,95 +2486,64 @@ x:-o-prefocus, .lb-overlay img {
 	    		.font-size(16);
     		}
     	}
-    }
-    
-select {padding: 3px 0;}
-
-@font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello.eot');
-  src: url('../fonts/fontello.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff') format('woff'),
-       url('../fonts/fontello.ttf') format('truetype'),
-       url('../fonts/fontello.svg#fontello') format('svg');
-  font-weight: normal; font-style: normal;
-}
-
-[class*="icon-"] {
-  font-family: 'fontello';
-  font-style: normal;
-  .font-size(6);
-  speak: none;
-}
-    
-    .icon-cog:after { content: "\2699"; } 
-    
-    .nav {
-  list-style: none;
-  text-align: center;
-  position: relative;
-}
-
-.nav li {
-  position: relative;
-  .inline-block;
-  margin-right: -4px; /* See: http://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
-}
-
-.nav li:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  z-index: -1;
-}
-
-.nav a {
-  display: block;
-  background-color: #f7f7f7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
-  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
-  color: #a7a7a7;
-  margin: 60px 0 36px;
-  width: 120px;
-  height: 120px;
-  position: relative;
-  text-align: center;
-  line-height: 128px;
-  border-radius: 50%;
-  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px @blanco;
-  border-bottom: 1px solid @gris-palido - 16;
-  cursor: default;
-}
-.nav span {
- 	color:@gris-medio;
-    font-family: "arial black";
-    position: absolute;
-    right:17px;
-    top: 11px;
-}
-
-.nav a:before {
-  content: "";
-  display: block;
-  background: @blanco;
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
-  border-top: 2px solid #ddd;
-  position: absolute;
-  top: -18px;
-  left: -18px;
-  bottom: -18px;
-  right: -18px;
-  z-index: -1;
-  border-radius: 50%;
-  box-shadow: inset 0px 8px 48px #ddd;
-}
-    
+    }   
+    select {padding: 3px 0;}
+    .icon-cog:after { content: "\2699"; }  
+	.nav {
+	  	list-style: none;
+	  	text-align: center;
+	  	position: relative;
+	  	li {
+		  position: relative;
+		  .inline-block;
+		  margin-right: -4px; /* See: http://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
+		  &:before {
+			  content: "";
+			  display: block;
+			  width: 100%;
+			  height: 1px;
+			  position: absolute;
+			  top: 50%;
+			  z-index: -1;
+			}
+		}
+		a {
+		  display: block;
+		  color: #a7a7a7;
+		  margin: 60px 0 36px;
+		  width: 120px;
+		  height: 120px;
+		  position: relative;
+		  text-align: center;
+		  line-height: 128px;
+		  border-bottom: 1px solid @gris-palido - 16;
+		  cursor: default;
+		  .redondear(50%);
+		  .gradient (#f7f7f7, #e7e7e7);
+		  .box-shadow(~"0px 3px 8px #aaa, inset 0px 2px 3px @blanco");
+		  &:before {
+			  content: "";
+			  display: block;
+			  background: @blanco;
+			 .rgba(255, 255, 255, 0.2);
+			  border-top: 2px solid #ddd;
+			  position: absolute;
+			  top: -18px;
+			  left: -18px;
+			  bottom: -18px;
+			  right: -18px;
+			  z-index: -1;
+			  .redondear(50%);
+			  .box-shadow(~"inset 0px 8px 48px #ddd");
+			}
+		}
+		span {
+		 	color:@gris-medio;
+		    position: absolute;
+		    right:17px;
+		    top: 11px;
+		}
+	}
 }
 
 
