@@ -39,32 +39,20 @@
 	
 	<!-- Metas -->
 	<meta name="description" content="">
-	<meta name="author" content="">
-	
-    <!--Microsoft-->
-	<meta http-equiv="cleartype" content="on">
-	<!--[if lt IE 7 ]>
-		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script><script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
-	<![endif]-->
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
-	<![endif]-->
+	<meta name="keywords" content="">
+
+    
 	
 	<!-- Viewport optimizado -->
  	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0; target-densitydpi=160dpi;">
     <!--iOS safari app -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	
-	
     
     <!-- !Estilos generales -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 	<!-- slideshow -->
     <link rel="stylesheet" type="text/css" href="css/slideshow.css">
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
-	<![endif]-->
 	<!-- 1140px Grid -->
 	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen">
 	<!-- layout -->
@@ -80,6 +68,15 @@
 	<link rel="stylesheet" href="css/typeimg.css" type="text/css" media="screen">
 	<!-- Ubuntu Tipografía -->
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
+    
+    <!--Microsoft-->
+	<meta http-equiv="cleartype" content="on">
+	<!--[if IE 8]>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/slideshow_ie.css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+		<script type="text/javascript" src="js/selectivizr-min.js"></script>
+  <![endif]-->
     
     <!-- Enlaces canónicos -->
     <!-- http://t.co/y1jPVnT -->
@@ -443,8 +440,7 @@ if (Modernizr.borderradius){
 		 
 		<!-- !#Content -->
 		<section id="content" role="main" class="home">
-		
-				<!-- !#slider -->
+		<!-- !#slider -->
         <section id="slider">
         	<section id="slides">
 	            <section id="jms-slideshow" class="jms-slideshow">
@@ -455,53 +451,14 @@ if (Modernizr.borderradius){
 							<p>Eficiencia y confiabilidad, <br>
 	                        temperatura de operación -15°C a 120°C,
 	                        Componentes en acero inoxidable</p>
-							<a class="jms-link" href="#">Ver más...</a>
+	                        <a class="jms-link" href="#">Ver más...</a>
 						</div>
-						<img src="images/1.png" />
+						<img src="images/1.png">
 					</div>
 					
-					<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
-						<div class="jms-content">
-							<h3>Holy cannoli!</h3>
-							<p>But as the riper should by time decease, his tender heir might bear his memory</p>
-							<a class="jms-link" href="#">Ver más...</a>
-						</div>
-						<img src="images/2.png" />
-					</div>
 					
-					<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
-						<div class="jms-content">
-							<h3>Bombas y motores</h3>
-							<p>Alto desempeño<br>
-	                        Eficiencia y duración<br>
-	                        Amplia gama de modelos<br>
-	                        </p>
-							<a class="jms-link" href="#">Ver más...</a>
-						</div>
-						<img src="images/3.png" />
-					</div>
 					
-					<div class="step" data-color="color-4" data-x="3000" data-y="2000">
-						<div class="jms-content">
-							<h3>Presurizadores</h3>
-							<p>Confort<br>
-							Ahorrro de energía<br>
-							presión constante<br>
-							Silenciosos<br>
-							Fácil de de ajusta</p>
-							<a class="jms-link" href="#">Ver más...</a>
-						</div>
-						<img src="images/4.png" />
-					</div>
 					
-					<div class="step" data-color="color-5" data-x="4000" data-y="1500" data-z="1000" data-rotate="-20">
-						<div class="jms-content">
-							<h3>Did you know that...</h3>
-							<p>Thou that art now the world's fresh ornament and only herald to the gaudy spring</p>
-							<a class="jms-link" href="#">Ver más...</a>
-						</div>
-						<img src="images/5.png" />
-					</div>
 					
 				</section> <!-- /#jms-slideshow -->
             </section> <!-- /#slides -->
@@ -510,6 +467,7 @@ if (Modernizr.borderradius){
                 <div id="right"></div>
             </div>
         </section> <!-- /#jms-slideshow -->
+				
         
         <!-- !Modulos -->
 			<section id="modulos">

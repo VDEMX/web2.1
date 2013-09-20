@@ -500,7 +500,7 @@ a:hover {
   -khtml-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .br10 {
   -webkit-border-radius: 10px;
@@ -508,7 +508,7 @@ a:hover {
   -khtml-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .br15 {
   -webkit-border-radius: 15px;
@@ -516,7 +516,7 @@ a:hover {
   -khtml-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .br20 {
   -webkit-border-radius: 20px;
@@ -524,7 +524,7 @@ a:hover {
   -khtml-border-radius: 20px;
   -ms-border-radius: 20px;
   border-radius: 20px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .br25 {
   -webkit-border-radius: 25px;
@@ -532,7 +532,7 @@ a:hover {
   -khtml-border-radius: 25px;
   -ms-border-radius: 25px;
   border-radius: 25px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .br30 {
   -webkit-border-radius: 30px;
@@ -540,11 +540,11 @@ a:hover {
   -khtml-border-radius: 30px;
   -ms-border-radius: 30px;
   border-radius: 30px;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }
 .sombra {
   -webkit-box-shadow: 3px 3px 5px #404040;
   -moz-box-shadow: 3px 3px 5px #404040;
   box-shadow: 3px 3px 5px #404040;
-  behavior: url("http://vde.com.mx/vde2.1/js/PIE.htc");
+  behavior: url("../js/PIE.htc");
 }

@@ -887,16 +887,15 @@ input[type="checkbox"] {
 }
 
 #buscador {
-    .redondear(15px);
-    .padding(0, 0, 0, 22px);
     position: relative;
-	content: "";
 	height: 25px;
-	.right;
 	background:@blanco;
 	margin-top:12px;
-	.inner-shadow(0, 1px, 6px, 0.8);
 	max-width: 500px;
+	.right;
+	.redondear(15px);
+    .padding(0, 0, 0, 22px);
+    .inner-shadow(0, 1px, 6px, 0.8);
 	input {
 	    background: none repeat scroll 0 0 transparent;
 	    border: medium none;
@@ -924,9 +923,11 @@ input[type="checkbox"] {
 		.font-size(13);
 	}
 }
+
 .busqueda input {behavior: inherit; box-shadow:none;}
 
-/* !8 Contenido*/
+/* !8 Contenido */
+
 #container {
 	position:relative; /* needed for footer positioning*/
 	.margin(0, auto,0, auto,); /* center, not in IE5 */
@@ -938,11 +939,9 @@ input[type="checkbox"] {
     min-width:@px100 * 9.8;
 }
 
-
 #content {.padding(1em, 1em, 230px, 1em); /* bottom padding for footer */}
 
-/* =9 Footer
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* !9 Footer */
 #footer {
 	position:absolute;
 	width:@pr100;
@@ -1106,7 +1105,6 @@ input[type="checkbox"] {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	display: inherit;
-	
 }
 .a_demo_one:before , .a_demo_one::link {
 	background-color:@gris-claro;
