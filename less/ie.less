@@ -22,6 +22,13 @@
     input, input:focus {width: 220px!important;}
 }
 
+#footer {
+	h2{.font-size(16);}
+	.fourcol.last {
+		.col(27%);
+	}
+}
+
 #menu {
 	a {
 		padding: 20px 0.7em 8px;
@@ -67,14 +74,14 @@
 				}
 				div{
 				    h3 {
-				    font-size: 1.6em;
+				    .font-size(16);
 				    height: 40px;
 				    line-height: 1em;
 				    margin-top: 6px;
 				    width: 35%;
 				    }
 				    p {
-				    font-size: 1em;
+				    .font-size(10);
 				    height: 45px;
 				    padding: 0;
 				    width: 53%;
@@ -137,9 +144,9 @@
 		.tb-esp {
 		    display: block;
 		    visibility: visible;
-		    font-size: 10px;
+		    .font-size(10);
 		}
-		h2 {font-size: 1.6em!important;}
+		h2 {.font-size(16)!important;}
 		.esp {
 			.row-shadow{background: none repeat scroll 0 0 @blanco;}
 		}
@@ -176,7 +183,7 @@
 		.comments div, .leermas div {background-image: url(../images/sprites.png)!important;}
 	}
 	#sidebar {
-		.mt25 {font-size: 0.92em;}
+		.mt25 {.font-size(9.2);}
 		input{border: 1px solid @gris;}
 	}
 	.categoria .post {
@@ -263,7 +270,7 @@ li {
 		position: relative; 
 		left: -1px; 
 		text-decoration: none; 
-		font-size: 14px;
+		.font-size(14);
 		font-weight: bold;
 		height: 40px;
 		letter-spacing: 1px;
@@ -292,7 +299,7 @@ li {
 }
 
 #tab-1, .tab-label-1, #tab-2, .tab-label-2, #tab-3, .tab-label-3{display: none!important;}
-.group:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.group:after {visibility: hidden; display: block; .font-size(0); content: " "; clear: both; height: 0;}
 
 .tabs .content {
     border: 1px solid @gris-claro + 17; 
