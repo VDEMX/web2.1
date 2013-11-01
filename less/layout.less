@@ -2035,7 +2035,6 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 				width:100%;
 				max-width: 840px;
 				#curva{
-					margin: 0 1em;
 					vertical-align: top;
 					.inline-block;
 				}
@@ -2065,13 +2064,13 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
     	box-shadow: 1px 1px 5px @gris;
     	background: none repeat scroll 0 0 @gris-palido - 2;
     	color:@gris-medio - 6;
-    	
     	.row-shadow, tr:nth-child(2n) {background: none repeat scroll 0 0 @blanco;}
     		td {
     		font-weight: normal;
     		padding: 4px;
     		text-align: center;
     		vertical-align: middle;
+    		.font-size(12);
     		}
     .header-table {
 	    	padding: 3px;
@@ -2079,7 +2078,8 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 	    	text-align: center;
 	    	.gradient (@blanco,@gris-palido - 20);
 	    	vertical-align: middle;
-	    	
+	    	.font-size(12);
+	    	&.t08{.font-size(8);}
 	    	}
     	}
 }
@@ -2368,7 +2368,6 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 .lb-overlay div p{
 	padding: 0px 20px;
 	width:48%;
-	height: 50px;
 	.inline-block;
 }
     
@@ -2493,8 +2492,8 @@ x:-o-prefocus, .lb-overlay img {
 	    	padding: 3px;
 	    	font-weight: bold;
 	    	text-align: center;
-	    	.gradient (@blanco,@gris-palido - 20);
 	    	vertical-align: middle;
+	    	.gradient (@blanco,@gris-palido - 20);
 	    }
     }
     #productos{
@@ -3793,12 +3792,11 @@ a.ui-slider-handle-horizontal {
 		    .boxShadow (1px, 1px,5px, @gris-medio);
 		    color: @gris-medio;
 		    .header-table {
-			    .gradient (@blanco, @gris-claro + 42);
 			    font-weight: bold;
 			    padding: 3px;
 			    text-align: center;
 			    vertical-align: middle;
-			    
+			    .gradient (@blanco, @gris-claro + 42);
 			}
 			td {
 			    .border(1px, solid, @gris-medio);
