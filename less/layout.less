@@ -2254,7 +2254,12 @@ a:active .mod-home {background: none repeat scroll 0 0 (@blanco - 10);}
 }
 
 .jThumbnailScroller .jTscroller .bloque:first-child{margin-left:10px;}
-.jThumbnailScroller .jTscroller .bloque img{border: 5px solid @gris-claro + 34;margin-bottom: 0;border-radius:3px;&:hover{border-color:@blanco;}}
+.jThumbnailScroller .jTscroller .bloque img{
+	border: 5px solid @gris-claro + 34;
+	margin:0 auto;
+	border-radius:3px;
+	&:hover{border-color:@blanco;}
+}
 /* different styled scrollers */
 /* liquid width scroller */
 .jThumbnailScroller#tS1{width:95%;}
